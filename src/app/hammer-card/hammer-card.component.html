@@ -1,0 +1,23 @@
+<mat-card class="generic-card" 
+          [@cardAnimator]="animationState" 
+          (@cardAnimator.done)="resetAnimationState()"
+          (swipeleft)="startAnimation('slideOutLeft')"
+          (swiperight)="startAnimation('zoomOutRight')"
+          (swipeup)="startAnimation('rotateOutUpRight')"
+          (swipedown)="startAnimation('flipOutY')">
+ 
+    <mat-card-content>
+      <img mat-card-image src="https://media1.tenor.com/images/aca70f7d004b7c60e2c6e98ffcfe3440/tenor.gif">
+        
+      <p>
+         Use this in your progressive web app if you want to have the best UX (*user experience)
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (tap)="startAnimation('wobble')">WOBBLE</button>
+      <button mat-raised-button color="primary" (tap)="startAnimation('swing')">SWING</button>
+
+      <h5>Custom Events</h5>
+      <button hammertime mat-raised-button color="accent" (doubleTap)="startAnimation('jello')">JELLO (doubleTap) </button>
+    </mat-card-actions>
+</mat-card>

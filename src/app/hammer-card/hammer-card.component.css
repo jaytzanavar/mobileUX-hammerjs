@@ -1,0 +1,14 @@
+.centerCard {
+    margin: 10% auto;
+    width: 500px;
+    height: 500px;
+}
+
+
+img {
+    width: 200px;
+}
+
+.generic-card {
+    text-align: center
+}

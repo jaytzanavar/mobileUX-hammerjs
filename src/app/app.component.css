@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vh 20vw;
+    z-index: 50;
+}
+
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background-color: #144c37;
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 0.9;
+}
+
+ul {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+    text-align: center;
+}
+
+nav {
+    height: 100%;
+    padding: 50% 25%;
+}
+
+li {
+    list-style: none;
+    color: white;
+    font-size: 1.6em;
+    transition: 0.3s color linear;
+}
+
+li:hover {
+    color: blue;
+}
+
+.close-button{
+    font-size: 2em;
+    color:white;
+    position:  absolute;
+    right:10%;
+}

@@ -1,0 +1,15 @@
+<main [@slideAnimator]="unslideState" (swiperight)="startAnimation('slideInRight')">
+    <app-hammer-card [enableContent]='parentSubject'></app-hammer-card>
+</main>
+<div class='sidenav' [@slideAnimator]="animationState" (swipeleft)="startAnimation('slideOutLeft')">
+    
+    <mat-icon (click)="startAnimation('slideOutLeft')" class='close-button'>close</mat-icon>
+    <nav>
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+        </ul>
+    </nav>
+</div>
+
