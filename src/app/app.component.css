@@ -15,7 +15,7 @@ main {
     top: 0;
     left: 0;
     background-color: #144c37;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top: 20px;
     opacity: 0.9;
 }
@@ -31,7 +31,7 @@ ul {
 
 nav {
     height: 100%;
-    padding: 50% 25%;
+    padding: 10% 25%;
 }
 
 li {

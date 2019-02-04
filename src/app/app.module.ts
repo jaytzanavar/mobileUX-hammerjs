@@ -22,6 +22,8 @@ import { HammertimeDirective } from './hammertime.directive';
 
 import * as Hammer from 'hammerjs';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any>{
@@ -45,7 +47,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     MatSidenavModule,
     MatCheckboxModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   exports: [
     MatCardModule,

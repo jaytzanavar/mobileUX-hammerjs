@@ -1,4 +1,7 @@
 <main [@slideAnimator]="unslideState" (swiperight)="startAnimation('slideInRight')">
+    <h3 *ngIf="true">
+        Service Worker APP
+    </h3>
     <app-hammer-card [enableContent]='parentSubject'></app-hammer-card>
 </main>
 <div class='sidenav' [@slideAnimator]="animationState" (swipeleft)="startAnimation('slideOutLeft')">
